@@ -35,7 +35,7 @@ func TestReturnHealth(t *testing.T) {
     if rr.Code != http.StatusOK {
         t.Errorf("ReturnHealth returned wrong status code, expected %v, got %v", http.StatusOK, rr.Code)
     }
-    expectedHealth := "Healthy"
+    expectedHealth := "Healthy YA MUM"
 
     if ! strings.Contains(rr.Body.String(), expectedHealth) {
         t.Errorf("ReturnHealth returned wrong health status, expected %v, got %v", expectedHealth, rr.Body.String())

@@ -71,7 +71,7 @@ func ReturnHostname(w http.ResponseWriter, r *http.Request) {
 
 //ReturnHealth returns healthy string, can be used for monitoring pourposes
 func ReturnHealth(w http.ResponseWriter, r *http.Request) {
-	health := "Healthy"
+	health := "Healthy YA MUM"
 	_, err := w.Write([]byte(health + "\n"))
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
