@@ -1,6 +1,6 @@
 # Reverse Words 
 
-**Get reverse word-test**
+**Get reverse word**
 
 ```sh
 curl http://127.0.0.1:8080/ -X POST -d '{"word":"PALC"}'
